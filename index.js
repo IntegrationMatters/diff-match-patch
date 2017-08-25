@@ -2184,10 +2184,7 @@ diff_match_patch.patch_obj.prototype.toString = function() {
   return text.join('').replace(/%20/g, ' ');
 };
 
-
-// The following export code was added by @ForbesLindesay
-module.exports = diff_match_patch;
-module.exports['diff_match_patch'] = diff_match_patch;
-module.exports['DIFF_DELETE'] = DIFF_DELETE;
-module.exports['DIFF_INSERT'] = DIFF_INSERT;
-module.exports['DIFF_EQUAL'] = DIFF_EQUAL;
+window.diff_match_patch = diff_match_patch;
+window.DIFF_DELETE = DIFF_DELETE;
+window.DIFF_INSERT = DIFF_INSERT;
+window.DIFF_EQUAL = DIFF_EQUAL;
